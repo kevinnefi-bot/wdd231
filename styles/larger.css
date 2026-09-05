@@ -1,0 +1,35 @@
+@media (min-width: 600px) {
+    /* Ocultar botón hamburguesa en escritorio */
+    #hamburger-btn {
+        display: none;
+    }
+
+    /* Menú de Navegación Horizontal usando Flexbox (display: flex) */
+    .navigation {
+        display: block !important;
+        background-color: #002244;
+    }
+
+    .navigation ul {
+        display: flex; /* Requisito obligatorio de Flexbox */
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .navigation li a {
+        border-bottom: none;
+    }
+
+    /* Estructura en Grid para Escritorio */
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .certificate-section {
+        grid-column: span 2;
+    }
+
+    .course-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

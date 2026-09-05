@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 231 Course Home Page</title>
     <meta name="description" content="WDD 231 Web Frontend Development course home page showcasing dynamic content, course list filters, and dynamic layout.">
-    <meta name="author" content="Your Name">
+    <meta name="author" content="Kevin Balcazar">
 
-    <!-- Stylesheets -->
+    <!-- Google Fonts API (Requerido por la auditoría) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Hojas de Estilo CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
 
-    <!-- Scripts -->
+    <!-- Scripts de JavaScript (con atributo defer) -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/course.js" defer></script>
@@ -20,7 +25,7 @@
 <body>
     <header>
         <img src="images/logo.svg" alt="Site Logo" width="48" height="48">
-        <span>Your Name</span>
+        <span>Kevin Balcazar</span>
         <button id="hamburger-btn" class="hamburger" aria-label="Toggle Navigation"></button>
     </header>
 
@@ -42,7 +47,7 @@
 
             <section class="card">
                 <h2>Location</h2>
-                <p>Your State / Country Details</p>
+                <p>Cochabamba, Bolivia</p>
             </section>
 
             <section class="card certificate-section">
@@ -60,14 +65,14 @@
 
     <footer>
         <div class="social-links">
-            <a href="https://github.com/your-username" target="_blank" rel="noopener">
+            <a href="https://github.com/kevinnefi-bot" target="_blank" rel="noopener">
                 <img src="images/github-icon.svg" alt="GitHub Profile" width="24" height="24">
             </a>
-            <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener">
+            <a href="https://linkedin.com/" target="_blank" rel="noopener">
                 <img src="images/linkedin-icon.svg" alt="LinkedIn Profile" width="24" height="24">
             </a>
         </div>
-        <p>&copy; <span id="currentyear"></span> | Your Name | Your State/Country</p>
+        <p>&copy; <span id="currentyear"></span> | Kevin Balcazar | Bolivia</p>
         <p id="lastModified"></p>
     </footer>
 </body>

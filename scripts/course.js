@@ -73,12 +73,10 @@ function displayCourses(courseList) {
         container.appendChild(card);
     });
 
-    // Reduce function to calculate dynamic credits based on visible courses
     const totalCredits = courseList.reduce((sum, course) => sum + course.credits, 0);
     totalCreditsEl.textContent = `Total Credits: ${totalCredits}`;
 }
 
-// Event Listeners for Filters
 document.querySelector('#all-btn').addEventListener('click', () => displayCourses(courses));
 document.querySelector('#wdd-btn').addEventListener('click', () => {
     displayCourses(courses.filter(course => course.subject === 'WDD'));
@@ -87,5 +85,4 @@ document.querySelector('#cse-btn').addEventListener('click', () => {
     displayCourses(courses.filter(course => course.subject === 'CSE'));
 });
 
-// Initial Render
 displayCourses(courses);
