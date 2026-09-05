@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 Course Home Page</title>
+    <meta name="description" content="WDD 231 Web Frontend Development course home page showcasing dynamic content, course list filters, and dynamic layout.">
+    <meta name="author" content="Your Name">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Scripts -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Site Logo" width="48" height="48">
+        <span>Your Name</span>
+        <button id="hamburger-btn" class="hamburger" aria-label="Toggle Navigation"></button>
+    </header>
+
+    <nav id="primary-nav" class="navigation">
+        <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+        <div class="grid-container">
+            <section class="card">
+                <h2>Course Work</h2>
+                <p>Overview of developmental assignments and learning activities.</p>
+            </section>
+
+            <section class="card">
+                <h2>Location</h2>
+                <p>Your State / Country Details</p>
+            </section>
+
+            <section class="card certificate-section">
+                <h2>Web and Computer Programming Certificate</h2>
+                <div class="filters">
+                    <button id="all-btn">All</button>
+                    <button id="wdd-btn">WDD</button>
+                    <button id="cse-btn">CSE</button>
+                </div>
+                <div id="course-container" class="course-grid"></div>
+                <p id="total-credits"></p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/your-username" target="_blank" rel="noopener">
+                <img src="images/github-icon.svg" alt="GitHub Profile" width="24" height="24">
+            </a>
+            <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener">
+                <img src="images/linkedin-icon.svg" alt="LinkedIn Profile" width="24" height="24">
+            </a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> | Your Name | Your State/Country</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
