@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Directory - Cochabamba Chamber of Commerce</title>
+    <meta name="description" content="Directory page for the Cochabamba Chamber of Commerce showcasing local businesses and members.">
+    <meta name="author" content="Kevin Balcazar">
+
+    <!-- Favicon -->
+    <link rel="icon" href="../favicon.ico">
+
+    <!-- Open Graph / Social Media Meta -->
+    <meta property="og:title" content="Cochabamba Chamber of Commerce Directory">
+    <meta property="og:description" content="Discover registered businesses and services in the Cochabamba Chamber of Commerce.">
+    <meta property="og:image" content="https://kevinnefi-bot.github.io/wdd231/chamber/images/logo.webp">
+    <meta property="og:url" content="https://kevinnefi-bot.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.webp" alt="Chamber Logo" width="60" height="60">
+            <span>Cochabamba Chamber of Commerce</span>
+        </div>
+        <button id="hamburger-btn" aria-label="Toggle Menu">☰</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Business Directory</h1>
+        
+        <!-- Botones de alternancia de vista -->
+        <div class="view-menu">
+            <button id="grid-btn" class="active">Grid View</button>
+            <button id="list-btn">List View</button>
+        </div>
+
+        <!-- Contenedor dinámico de miembros -->
+        <article id="members-container" class="grid-view"></article>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <p><strong>Cochabamba Chamber of Commerce</strong></p>
+            <p>Av. Heroínas #456, Cochabamba, Bolivia</p>
+            <p>info@cochabambachamber.org | +591 4 4521100</p>
+        </div>
+        <div class="footer-dev">
+            <p>&copy; <span id="currentyear"></span> Kevin Balcazar | WDD 231 Project</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

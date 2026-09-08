@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Cochabamba Tech Solutions",
+    "address": "Av. Heroínas #456, Cochabamba",
+    "phone": "+591 4 4521100",
+    "website": "https://example.com",
+    "image": "images/empresa1.webp",
+    "membership": 3,
+    "category": "IT Services"
+  },
+  {
+    "name": "Valle Fitness Center",
+    "address": "Calle España #123, Cochabamba",
+    "phone": "+591 4 4258900",
+    "website": "https://example.com",
+    "image": "images/empresa2.webp",
+    "membership": 2,
+    "category": "Health & Fitness"
+  },
+  {
+    "name": "Gastronomía Central",
+    "address": "Av. Ballivián #789, Cochabamba",
+    "phone": "+591 4 4112233",
+    "website": "https://example.com",
+    "image": "images/empresa3.webp",
+    "membership": 1,
+    "category": "Restaurant"
+  },
+  {
+    "name": "Andes Coffee Roasters",
+    "address": "Calle Bolívar #321, Cochabamba",
+    "phone": "+591 4 4334455",
+    "website": "https://example.com",
+    "image": "images/empresa4.webp",
+    "membership": 2,
+    "category": "Café & Bakery"
+  },
+  {
+    "name": "Constructora del Valle",
+    "address": "Av. América #654, Cochabamba",
+    "phone": "+591 4 4667788",
+    "website": "https://example.com",
+    "image": "images/empresa5.webp",
+    "membership": 3,
+    "category": "Construction"
+  },
+  {
+    "name": "Eco Sostenible Logística",
+    "address": "Av. Blanco Galindo km 3, Cochabamba",
+    "phone": "+591 4 4889900",
+    "website": "https://example.com",
+    "image": "images/empresa6.webp",
+    "membership": 1,
+    "category": "Logistics"
+  },
+  {
+    "name": "Estudio Legal Balcazar",
+    "address": "Calle Salamanca #987, Cochabamba",
+    "phone": "+591 4 4991122",
+    "website": "https://example.com",
+    "image": "images/empresa7.webp",
+    "membership": 3,
+    "category": "Legal Services"
+  }
+]
