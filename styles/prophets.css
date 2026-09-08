@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+}
+
+header, footer {
+    background-color: #2b4c7e;
+    color: white;
+    padding: 1.5rem;
+}
+
+main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* CSS Grid responsivo con auto-fit */
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* Estilo para cada tarjeta */
+section {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section h2 {
+    color: #1a2e40;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+
+section p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+}
+
+section img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
