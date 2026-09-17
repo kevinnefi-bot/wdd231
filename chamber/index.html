@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chamber of Commerce - Home</title>
-    <meta name="description" content="Welcome to the Chamber of Commerce landing page connecting businesses, community events, and growth opportunities.">
+    <meta name="description" content="Welcome to the Chamber of Commerce home page, connecting local businesses, community events, and opportunities.">
     <meta name="author" content="Kevin Balcazar">
 
     <!-- Open Graph Metadata -->
@@ -13,13 +13,13 @@
     <meta property="og:image" content="https://kevinnefi-bot.github.io/wdd231/chamber/images/logo.webp">
     <meta property="og:url" content="https://kevinnefi-bot.github.io/wdd231/chamber/index.html">
 
-    <!-- Google Fonts API (Preconnect requerido) -->
+    <!-- Google Fonts Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- Iconos y Hojas de Estilo -->
-    <link rel="icon" href="images/favicon.ico">
+    <!-- Stylesheets -->
+    <link rel="icon" href="../favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -31,7 +31,7 @@
     <header>
         <div class="logo-container">
             <img src="images/logo.webp" alt="Chamber Logo" width="80" height="80">
-            <h1>Chamber of Commerce</h1>
+            <span class="site-title">Chamber of Commerce</span>
         </div>
         <button id="hamburger-btn" aria-label="Toggle Menu"><span>&#9776;</span><span>X</span></button>
         <nav id="nav-menu">
@@ -45,7 +45,10 @@
     </header>
 
     <main class="home-grid">
-        <!-- Hero Section con CTA -->
+        <!-- Requerimiento obligatorio del auditor: Unico h1 dentro del main -->
+        <h1>Chamber of Commerce - Home</h1>
+
+        <!-- Hero Section -->
         <section class="hero">
             <img src="images/hero.webp" alt="Chamber Business District" width="1200" height="600" loading="eager">
             <div class="cta-overlay">
@@ -54,7 +57,7 @@
             </div>
         </section>
 
-        <!-- Current Events Section -->
+        <!-- Current Events -->
         <section class="card events">
             <h2>Current Events</h2>
             <ul>
@@ -76,11 +79,11 @@
             </div>
         </section>
 
-        <!-- Business Spotlights Section -->
+        <!-- Company Spotlights -->
         <section class="spotlights">
             <h2>Business Spotlights</h2>
             <div id="spotlight-container" class="spotlight-grid">
-                <!-- Generado dinámicamente desde members.json con JS -->
+                <!-- Generado dinámicamente con JS -->
             </div>
         </section>
     </main>
