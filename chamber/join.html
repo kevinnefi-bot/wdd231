@@ -1,128 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of Commerce - Join Us</title>
-    <meta name="description" content="Apply for a membership with the Chamber of Commerce and discover the benefits of growing your business with us.">
-    <meta name="author" content="Kevin Balcazar">
+<form method="get" action="thankyou.html" class="membership-form">
+    <fieldset>
+        <legend>Applicant Information</legend>
+        
+        <label>First Name *
+            <input type="text" name="fname" id="fname" required title="Please enter your first name" autocomplete="given-name">
+        </label>
 
-    <meta property="og:title" content="Chamber of Commerce - Membership Application">
-    <meta property="og:description" content="Apply for a membership with the Chamber of Commerce and discover the benefits of growing your business with us.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://kevinnefi-bot.github.io/wdd231/chamber/images/logo.webp">
-    <meta property="og:url" content="https://kevinnefi-bot.github.io/wdd231/chamber/join.html">
+        <label>Last Name *
+            <input type="text" name="lname" id="lname" required title="Please enter your last name" autocomplete="family-name">
+        </label>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <label>Organizational Title
+            <input type="text" name="orgtitle" id="orgtitle" title="Title must contain only letters, hyphens, and spaces with at least 7 characters" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+        </label>
 
-    <link rel="icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css">
+        <label>Email Address *
+            <input type="email" name="email" id="email" required title="Please enter a valid email address" autocomplete="email" placeholder="name@example.com">
+        </label>
 
-    <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/dates.js" defer></script>
-    <script src="scripts/join.js" defer></script>
-</head>
-<body>
-    <header>
-        <div class="logo-container">
-            <img src="images/logo.webp" alt="Chamber Logo" width="80" height="80">
-            <span class="site-title">Chamber of Commerce</span>
-        </div>
-        <button id="hamburger-btn" aria-label="Toggle Menu"><span>&#9776;</span><span>X</span></button>
-        <nav id="nav-menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html" class="active">Join</a></li>
-                <li><a href="#">Discover</a></li>
-            </ul>
-        </nav>
-    </header>
+        <label>Mobile Phone *
+            <input type="tel" name="phone" id="phone" required title="Please enter your mobile phone number" autocomplete="tel">
+        </label>
+    </fieldset>
 
-    <main class="join-layout">
-        <h1>Membership Application</h1>
+    <fieldset>
+        <legend>Business Information</legend>
+        
+        <label>Business / Organization Name *
+            <input type="text" name="organization" id="organization" required title="Please enter your organization name" autocomplete="organization">
+        </label>
 
-        <form class="membership-form" method="get" action="thankyou.html">
-            <fieldset>
-                <legend>Applicant Information</legend>
+        <label>Membership Level *
+            <select name="membership" id="membership" required title="Please select a membership level">
+                <option value="" disabled selected>Select Level...</option>
+                <option value="np">NP Membership (Non-Profit - Free)</option>
+                <option value="bronze">Bronze Membership</option>
+                <option value="silver">Silver Membership</option>
+                <option value="gold">Gold Membership</option>
+            </select>
+        </label>
 
-                <label for="fname">First Name
-                    <input type="text" id="fname" name="fname" autocomplete="given-name" title="First Name" required>
-                </label>
+        <label>Business Description
+            <textarea name="descriptionBased on your automated code review, your page is mostly compliant, but there are a few specific issues you need to fix in your HTML form and accessibility settings to pass:
 
-                <label for="lname">Last Name
-                    <input type="text" id="lname" name="lname" autocomplete="family-name" title="Last Name" required>
-                </label>
+---
 
-                <label for="title">Job Title
-                    <input type="text" id="title" name="title" autocomplete="organization-title" title="Job Title" required>
-                </label>
+### 1. Form Inputs & Attributes Fixes (`join.html`)
+Your `<form>` element is missing key HTML5 attributes, autocomplete values, and titles for accessibility. Update your form fields to match the following code:
 
-                <label for="email">Email Address
-                    <input type="email" id="email" name="email" autocomplete="email" title="Email Address" placeholder="name@example.com" required>
-                </label>
+```html
+<!-- First Name -->
+<label>First Name:
+  <input type="text" name="fname" required autocomplete="given-name">
+</label>
 
-                <label for="phone">Mobile Phone
-                    <input type="tel" id="phone" name="phone" autocomplete="tel" title="Mobile Phone" placeholder="(555) 123-4567" required>
-                </label>
+<!-- Last Name -->
+<label>Last Name:
+  <input type="text" name="lname" required autocomplete="family-name">
+</label>
 
-                <label for="organization">Organization Name
-                    <input type="text" id="organization" name="organization" autocomplete="organization" title="Organization Name" required>
-                </label>
-            </fieldset>
+<!-- Organization Title -->
+<label>Organizational Title:
+  <input type="text" name="title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" title="Minimum 7 characters (letters, spaces, and hyphens only)">
+</label>
 
-            <fieldset>
-                <legend>Membership Details</legend>
+<!-- Email Address -->
+<label>Email Address:
+  <input type="email" name="email" required autocomplete="email" placeholder="name@example.com" title="Please enter a valid email address (e.g., name@example.com)">
+</label>
 
-                <label for="membership">Membership Level
-                    <select id="membership" name="membership" required>
-                        <option value="" selected disabled>Select a membership</option>
-                        <option value="NP">Non-Profit ($0)</option>
-                        <option value="Bronze">Bronze ($100)</option>
-                        <option value="Silver">Silver ($250)</option>
-                        <option value="Gold">Gold ($500)</option>
-                    </select>
-                </label>
+<!-- Mobile Phone -->
+<label>Mobile Phone:
+  <input type="tel" name="phone" required autocomplete="tel" title="Please enter a valid phone number">
+</label>
 
-                <label for="description">Organization Description
-                    <textarea id="description" name="description" rows="5" title="Organization Description" required></textarea>
-                </label>
-            </fieldset>
+<!-- Organization Name -->
+<label>Business / Organization Name:
+  <input type="text" name="organization" required autocomplete="organization">
+</label>
 
-            <input type="hidden" id="timestamp" name="timestamp">
-            <button type="submit" class="submit-btn">Join the Chamber</button>
-        </form>
-
-        <aside class="membership-cards" aria-label="Membership benefits">
-            <article class="membership-card animate-card">
-                <h2>NP Membership</h2>
-                <p>For nonprofit organizations seeking visibility and community support.</p>
-            </article>
-            <article class="membership-card animate-card">
-                <h2>Bronze Membership</h2>
-                <p>Ideal for small businesses that want networking and local exposure.</p>
-            </article>
-            <article class="membership-card animate-card">
-                <h2>Gold Membership</h2>
-                <p>Premium benefits, leadership access, and enhanced promotional opportunities.</p>
-            </article>
-        </aside>
-    </main>
-
-    <footer>
-        <div class="footer-info">
-            <p><strong>Chamber of Commerce</strong></p>
-            <p>123 Main Street, Suite 100</p>
-            <p>info@chamber.org | (555) 123-4567</p>
-        </div>
-        <div class="footer-dev">
-            <p>&copy; <span id="currentyear"></span> | Kevin Balcazar | WDD 231 Project</p>
-            <p id="lastModified"></p>
-        </div>
-    </footer>
-</body>
-</html>
+<!-- Organization Description -->
+<label>Business / Organization Description:
+  <textarea name="description" title="Provide a short description of your organization"></textarea>
+</label>
