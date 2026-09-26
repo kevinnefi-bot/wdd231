@@ -3,31 +3,33 @@
         display: none;
     }
 
-    nav {
+    #nav-menu {
         display: block;
-        width: auto;
-        margin-top: 0;
+        grid-column: auto;
     }
 
-    nav ul {
+    #nav-menu ul {
         display: flex;
-        gap: 1.5rem;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 1rem;
     }
 
-    nav a {
+    #nav-menu a {
         border-bottom: none;
-        border-radius: 4px;
+        border-radius: 6px;
+        padding: 0.7rem 1rem;
     }
 
-    /* Grilla principal en Desktop */
     .home-grid {
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 1.5rem;
     }
 
-    /* Ocupar el ancho completo de la grilla */
-    main h1, .hero, .spotlights {
+    main h1,
+    .hero,
+    .spotlights {
         grid-column: 1 / -1;
     }
 
@@ -35,10 +37,25 @@
         font-size: 2rem;
     }
 
-    /* Distribución de tarjetas de Miembros Destacados */
     .spotlight-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1.5rem;
+    }
+
+    .join-layout {
+        grid-template-columns: 1.4fr 0.8fr;
+        align-items: start;
+    }
+
+    .join-layout > h1,
+    .join-layout > .membership-form,
+    .join-layout > .membership-cards {
+        grid-column: 1 / -1;
+    }
+
+    .thankyou-main {
+        max-width: 760px;
+        margin: 0 auto;
     }
 }
