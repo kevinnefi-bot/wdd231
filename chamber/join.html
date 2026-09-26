@@ -51,27 +51,27 @@
                 <legend>Applicant Information</legend>
 
                 <label for="fname">First Name
-                    <input type="text" id="fname" name="fname" required>
+                    <input type="text" id="fname" name="fname" autocomplete="given-name" title="First Name" required>
                 </label>
 
                 <label for="lname">Last Name
-                    <input type="text" id="lname" name="lname" required>
+                    <input type="text" id="lname" name="lname" autocomplete="family-name" title="Last Name" required>
                 </label>
 
                 <label for="title">Job Title
-                    <input type="text" id="title" name="title" required>
+                    <input type="text" id="title" name="title" autocomplete="organization-title" title="Job Title" required>
                 </label>
 
                 <label for="email">Email Address
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" autocomplete="email" title="Email Address" placeholder="name@example.com" required>
                 </label>
 
                 <label for="phone">Mobile Phone
-                    <input type="tel" id="phone" name="phone" required>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" title="Mobile Phone" placeholder="(555) 123-4567" required>
                 </label>
 
                 <label for="organization">Organization Name
-                    <input type="text" id="organization" name="organization" required>
+                    <input type="text" id="organization" name="organization" autocomplete="organization" title="Organization Name" required>
                 </label>
             </fieldset>
 
@@ -89,7 +89,7 @@
                 </label>
 
                 <label for="description">Organization Description
-                    <textarea id="description" name="description" rows="5" required></textarea>
+                    <textarea id="description" name="description" rows="5" title="Organization Description" required></textarea>
                 </label>
             </fieldset>
 
