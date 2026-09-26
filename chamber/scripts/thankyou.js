@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const organization = formData.get("organization") || "N/A";
         const rawTimestamp = formData.get("timestamp") || "";
 
-        // Formatear timestamp a lectura amigable
         let formattedDate = "N/A";
         if (rawTimestamp) {
             const dateObj = new Date(decodeURIComponent(rawTimestamp));
