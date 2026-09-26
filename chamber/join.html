@@ -7,14 +7,12 @@
     <meta name="description" content="Apply for a membership with the Chamber of Commerce and discover the benefits of growing your business with us.">
     <meta name="author" content="Kevin Balcazar">
 
-    <!-- Open Graph Metadata -->
     <meta property="og:title" content="Chamber of Commerce - Membership Application">
     <meta property="og:description" content="Apply for a membership with the Chamber of Commerce and discover the benefits of growing your business with us.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://kevinnefi-bot.github.io/wdd231/chamber/images/logo.webp">
     <meta property="og:url" content="https://kevinnefi-bot.github.io/wdd231/chamber/join.html">
 
-    <!-- Google Fonts Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -32,7 +30,6 @@
     <header>
         <div class="logo-container">
             <img src="images/logo.webp" alt="Chamber Logo" width="80" height="80">
-            <!-- Se utiliza span en lugar de h1 para evitar la duplicación de h1 -->
             <span class="site-title">Chamber of Commerce</span>
         </div>
         <button id="hamburger-btn" aria-label="Toggle Menu"><span>&#9776;</span><span>X</span></button>
@@ -47,8 +44,85 @@
     </header>
 
     <main class="join-layout">
-        <!-- Este es el ÚNICO h1 permitido en toda la página -->
         <h1>Membership Application</h1>
-        
-        <!-- Resto del contenido del formulario y tarjetas -->
+
+        <form class="membership-form" method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+
+                <label for="fname">First Name
+                    <input type="text" id="fname" name="fname" required>
+                </label>
+
+                <label for="lname">Last Name
+                    <input type="text" id="lname" name="lname" required>
+                </label>
+
+                <label for="title">Job Title
+                    <input type="text" id="title" name="title" required>
+                </label>
+
+                <label for="email">Email Address
+                    <input type="email" id="email" name="email" required>
+                </label>
+
+                <label for="phone">Mobile Phone
+                    <input type="tel" id="phone" name="phone" required>
+                </label>
+
+                <label for="organization">Organization Name
+                    <input type="text" id="organization" name="organization" required>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Membership Details</legend>
+
+                <label for="membership">Membership Level
+                    <select id="membership" name="membership" required>
+                        <option value="" selected disabled>Select a membership</option>
+                        <option value="NP">Non-Profit ($0)</option>
+                        <option value="Bronze">Bronze ($100)</option>
+                        <option value="Silver">Silver ($250)</option>
+                        <option value="Gold">Gold ($500)</option>
+                    </select>
+                </label>
+
+                <label for="description">Organization Description
+                    <textarea id="description" name="description" rows="5" required></textarea>
+                </label>
+            </fieldset>
+
+            <input type="hidden" id="timestamp" name="timestamp">
+            <button type="submit" class="submit-btn">Join the Chamber</button>
+        </form>
+
+        <aside class="membership-cards" aria-label="Membership benefits">
+            <article class="membership-card animate-card">
+                <h2>NP Membership</h2>
+                <p>For nonprofit organizations seeking visibility and community support.</p>
+            </article>
+            <article class="membership-card animate-card">
+                <h2>Bronze Membership</h2>
+                <p>Ideal for small businesses that want networking and local exposure.</p>
+            </article>
+            <article class="membership-card animate-card">
+                <h2>Gold Membership</h2>
+                <p>Premium benefits, leadership access, and enhanced promotional opportunities.</p>
+            </article>
+        </aside>
     </main>
+
+    <footer>
+        <div class="footer-info">
+            <p><strong>Chamber of Commerce</strong></p>
+            <p>123 Main Street, Suite 100</p>
+            <p>info@chamber.org | (555) 123-4567</p>
+        </div>
+        <div class="footer-dev">
+            <p>&copy; <span id="currentyear"></span> | Kevin Balcazar | WDD 231 Project</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
