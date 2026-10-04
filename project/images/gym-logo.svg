@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60" aria-label="Peak Performance Gym Logo">
+  <defs>
+    <linearGradient id="peakGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0D1B2A" />
+      <stop offset="100%" stop-color="#E63946" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E63946" />
+      <stop offset="100%" stop-color="#FF6B6B" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Icon: Geometric Mountain Peaks & Barbell Weight -->
+  <g transform="translate(6, 6)">
+    <!-- Outer Weight Plate Ring -->
+    <circle cx="24" cy="24" r="22" fill="none" stroke="#0D1B2A" stroke-width="3" opacity="0.15" />
+    <circle cx="24" cy="24" r="22" fill="none" stroke="#E63946" stroke-width="2.5" stroke-dasharray="100 38" stroke-linecap="round" />
+    
+    <!-- Mountain Peaks -->
+    <!-- Back Peak -->
+    <polygon points="12,36 28,14 38,36" fill="#1D2D44" opacity="0.9" />
+    <!-- Front Tall Peak -->
+    <polygon points="18,36 30,8 42,36" fill="url(#peakGrad)" />
+    <!-- Peak Accent Notch / Snowline -->
+    <polygon points="30,8 34,17 31,16 29,19 26,17" fill="#F4F6F8" />
+    <!-- Barbell Hub / Center Core -->
+    <circle cx="24" cy="24" r="4.5" fill="#E63946" stroke="#FFFFFF" stroke-width="1.5" />
+  </g>
+
+  <!-- Typography: PEAK PERFORMANCE GYM -->
+  <text x="64" y="27" font-family="'Montserrat', sans-serif" font-size="19" font-weight="800" letter-spacing="1.5" fill="#0D1B2A">PEAK<tspan fill="#E63946">PERFORMANCE</tspan></text>
+  <text x="65" y="44" font-family="'Montserrat', sans-serif" font-size="10.5" font-weight="600" letter-spacing="3.8" fill="#1D2D44">ELITE FITNESS CLUB</text>
+</svg>

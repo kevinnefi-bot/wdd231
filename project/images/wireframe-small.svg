@@ -1,0 +1,218 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 1350" width="400" height="1350" aria-label="Peak Performance Gym Mobile Viewport Wireframe">
+  <defs>
+    <style>
+      .wf-bg { fill: #FFFFFF; }
+      .wf-card { fill: #FAFAFA; stroke: #333333; stroke-width: 1.5; }
+      .wf-card-alt { fill: #F0F2F5; stroke: #333333; stroke-width: 1.5; }
+      .wf-stroke { stroke: #333333; stroke-width: 1.5; fill: none; }
+      .wf-stroke-thin { stroke: #666666; stroke-width: 1; fill: none; }
+      .wf-text-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: 700; fill: #111111; }
+      .wf-text-bold { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: 600; fill: #222222; }
+      .wf-text-regular { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: 400; fill: #444444; }
+      .wf-text-muted { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: 400; fill: #777777; }
+      .wf-btn-primary { fill: #222222; }
+      .wf-btn-text-light { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: 600; fill: #FFFFFF; font-size: 11px; text-anchor: middle; }
+      .wf-btn-secondary { fill: #FFFFFF; stroke: #333333; stroke-width: 1.5; }
+      .wf-btn-text-dark { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: 600; fill: #222222; font-size: 11px; text-anchor: middle; }
+      .wf-img-box { fill: #EBEBEB; stroke: #333333; stroke-width: 1.5; }
+      .wf-img-cross { stroke: #AAAAAA; stroke-width: 1.2; stroke-dasharray: 4 3; }
+    </style>
+  </defs>
+
+  <!-- Phone Container / Screen Outline -->
+  <rect x="10" y="10" width="380" height="1330" rx="24" fill="#FFFFFF" stroke="#111111" stroke-width="3" />
+
+  <!-- Mobile Browser / Status Bar -->
+  <rect x="10" y="10" width="380" height="42" rx="24" fill="#1A1A1A" />
+  <rect x="10" y="32" width="380" height="20" fill="#1A1A1A" />
+  <!-- Speaker / Camera Notch -->
+  <rect x="155" y="16" width="90" height="10" rx="5" fill="#333333" />
+  <circle cx="230" cy="21" r="3" fill="#222222" />
+  <text x="32" y="26" fill="#DDDDDD" font-size="9" font-family="sans-serif" font-weight="600">09:41</text>
+  <text x="345" y="26" fill="#DDDDDD" font-size="9" font-family="sans-serif">5G 100%</text>
+
+  <!-- URL Bar -->
+  <rect x="24" y="58" width="352" height="26" rx="6" fill="#F0F2F5" stroke="#CCCCCC" stroke-width="1" />
+  <text x="200" y="75" text-anchor="middle" class="wf-text-muted" font-size="10">🔒 peakperformancegym.org</text>
+
+  <!-- Mobile Header -->
+  <g transform="translate(0, 90)">
+    <rect x="12" y="0" width="376" height="46" fill="#FFFFFF" />
+    <line x1="12" y1="46" x2="388" y2="46" stroke="#DDDDDD" stroke-width="1" />
+    
+    <!-- Hamburger Icon -->
+    <g transform="translate(26, 14)">
+      <line x1="0" y1="4" x2="20" y2="4" stroke="#222222" stroke-width="2.5" stroke-linecap="round" />
+      <line x1="0" y1="10" x2="20" y2="10" stroke="#222222" stroke-width="2.5" stroke-linecap="round" />
+      <line x1="0" y1="16" x2="20" y2="16" stroke="#222222" stroke-width="2.5" stroke-linecap="round" />
+    </g>
+
+    <!-- Logo / Title -->
+    <text x="56" y="28" class="wf-text-title" font-size="13" letter-spacing="0.5">PEAK PERFORMANCE</text>
+
+    <!-- Join CTA Pill -->
+    <rect x="290" y="10" width="76" height="26" rx="13" fill="#222222" />
+    <text x="328" y="27" class="wf-btn-text-light" font-size="10">JOIN NOW</text>
+  </g>
+
+  <!-- Hero Section (Mobile) -->
+  <g transform="translate(24, 148)">
+    <!-- Hero Image Placeholder (Box with X) -->
+    <rect x="0" y="0" width="352" height="150" rx="8" class="wf-img-box" />
+    <line x1="0" y1="0" x2="352" y2="150" class="wf-img-cross" />
+    <line x1="352" y1="0" x2="0" y2="150" class="wf-img-cross" />
+    <rect x="76" y="60" width="200" height="28" rx="4" fill="#FFFFFF" opacity="0.92" stroke="#444444" stroke-width="1" />
+    <text x="176" y="78" text-anchor="middle" class="wf-text-bold" font-size="11">[ HERO PHOTO: ATHLETES ]</text>
+
+    <!-- Hero Content -->
+    <text x="176" y="174" text-anchor="middle" class="wf-text-title" font-size="15">UNLEASH YOUR POTENTIAL</text>
+    <text x="176" y="193" text-anchor="middle" class="wf-text-regular" font-size="10">Elite equipment, certified coaching &amp; 24/7 access</text>
+
+    <!-- CTA Buttons (Stacked) -->
+    <rect x="16" y="206" width="320" height="34" rx="6" class="wf-btn-primary" />
+    <text x="176" y="227" class="wf-btn-text-light">CLAIM 3-DAY FREE TRIAL</text>
+
+    <rect x="16" y="246" width="320" height="32" rx="6" class="wf-btn-secondary" />
+    <text x="176" y="266" class="wf-btn-text-dark">VIEW CLASS TIMETABLE</text>
+  </g>
+
+  <!-- Quick Value Highlights (2x2 Grid) -->
+  <g transform="translate(24, 440)">
+    <text x="176" y="12" text-anchor="middle" class="wf-text-title" font-size="13">WHY TRAIN WITH US</text>
+    
+    <!-- 2x2 cards -->
+    <rect x="0" y="26" width="170" height="54" rx="6" class="wf-card" />
+    <circle cx="24" cy="53" r="12" fill="#E0E0E0" stroke="#555555" stroke-width="1" />
+    <text x="24" y="57" text-anchor="middle" font-size="11">⏱</text>
+    <text x="44" y="47" class="wf-text-bold" font-size="10">24/7 Access</text>
+    <text x="44" y="60" class="wf-text-muted" font-size="8.5">Keyless smart entry</text>
+
+    <rect x="182" y="26" width="170" height="54" rx="6" class="wf-card" />
+    <circle cx="206" cy="53" r="12" fill="#E0E0E0" stroke="#555555" stroke-width="1" />
+    <text x="206" y="57" text-anchor="middle" font-size="11">★</text>
+    <text x="226" y="47" class="wf-text-bold" font-size="10">Pro Trainers</text>
+    <text x="226" y="60" class="wf-text-muted" font-size="8.5">Certified experts</text>
+
+    <rect x="0" y="88" width="170" height="54" rx="6" class="wf-card" />
+    <circle cx="24" cy="115" r="12" fill="#E0E0E0" stroke="#555555" stroke-width="1" />
+    <text x="24" y="119" text-anchor="middle" font-size="11">🏋</text>
+    <text x="44" y="109" class="wf-text-bold" font-size="10">Top Equipment</text>
+    <text x="44" y="122" class="wf-text-muted" font-size="8.5">Olympic &amp; Hammer</text>
+
+    <rect x="182" y="88" width="170" height="54" rx="6" class="wf-card" />
+    <circle cx="206" cy="115" r="12" fill="#E0E0E0" stroke="#555555" stroke-width="1" />
+    <text x="206" y="119" text-anchor="middle" font-size="11">♨</text>
+    <text x="226" y="109" class="wf-text-bold" font-size="10">Recovery Spa</text>
+    <text x="226" y="122" class="wf-text-muted" font-size="8.5">Sauna &amp; cold plunge</text>
+  </g>
+
+  <!-- Featured Group Classes (Filter + List) -->
+  <g transform="translate(24, 600)">
+    <text x="176" y="14" text-anchor="middle" class="wf-text-title" font-size="13">WEEKLY GROUP CLASSES</text>
+
+    <!-- Category filter pills -->
+    <rect x="22" y="24" width="50" height="22" rx="11" fill="#222222" />
+    <text x="47" y="38" class="wf-btn-text-light" font-size="9">ALL</text>
+
+    <rect x="78" y="24" width="56" height="22" rx="11" fill="#EEEEEE" stroke="#999999" stroke-width="1" />
+    <text x="106" y="38" class="wf-btn-text-dark" font-size="9">HIIT</text>
+
+    <rect x="140" y="24" width="58" height="22" rx="11" fill="#EEEEEE" stroke="#999999" stroke-width="1" />
+    <text x="169" y="38" class="wf-btn-text-dark" font-size="9">CYCLING</text>
+
+    <rect x="204" y="24" width="56" height="22" rx="11" fill="#EEEEEE" stroke="#999999" stroke-width="1" />
+    <text x="232" y="38" class="wf-btn-text-dark" font-size="9">YOGA</text>
+
+    <rect x="266" y="24" width="64" height="22" rx="11" fill="#EEEEEE" stroke="#999999" stroke-width="1" />
+    <text x="298" y="38" class="wf-btn-text-dark" font-size="9">STRENGTH</text>
+
+    <!-- Class Card 1 -->
+    <rect x="0" y="56" width="352" height="48" rx="6" class="wf-card" />
+    <text x="16" y="76" class="wf-text-bold" font-size="11">HIIT Inferno • 07:00 AM</text>
+    <text x="16" y="92" class="wf-text-muted" font-size="9">Studio 1 • Coach Marcus • High Intensity</text>
+    <rect x="272" y="66" width="68" height="26" rx="4" class="wf-btn-primary" />
+    <text x="306" y="82" class="wf-btn-text-light" font-size="9.5">RESERVE</text>
+
+    <!-- Class Card 2 -->
+    <rect x="0" y="112" width="352" height="48" rx="6" class="wf-card" />
+    <text x="16" y="132" class="wf-text-bold" font-size="11">Power Spin • 12:30 PM</text>
+    <text x="16" y="148" class="wf-text-muted" font-size="9">Cycle Arena • Coach Elena • Cardio Endurance</text>
+    <rect x="272" y="122" width="68" height="26" rx="4" class="wf-btn-primary" />
+    <text x="306" y="138" class="wf-btn-text-light" font-size="9.5">RESERVE</text>
+
+    <!-- Class Card 3 -->
+    <rect x="0" y="168" width="352" height="48" rx="6" class="wf-card" />
+    <text x="16" y="188" class="wf-text-bold" font-size="11">Vinyasa Flow Yoga • 06:00 PM</text>
+    <text x="16" y="204" class="wf-text-muted" font-size="9">Zen Room • Coach Sarah • Flexibility &amp; Mind</text>
+    <rect x="272" y="178" width="68" height="26" rx="4" class="wf-btn-primary" />
+    <text x="306" y="194" class="wf-btn-text-light" font-size="9.5">RESERVE</text>
+  </g>
+
+  <!-- Membership Plans (Stacked Mobile Cards) -->
+  <g transform="translate(24, 840)">
+    <text x="176" y="14" text-anchor="middle" class="wf-text-title" font-size="13">MEMBERSHIP TIERS</text>
+
+    <!-- Card 1: Standard -->
+    <rect x="0" y="28" width="352" height="84" rx="6" class="wf-card" />
+    <text x="16" y="49" class="wf-text-bold" font-size="12">STANDARD PLAN</text>
+    <text x="290" y="49" class="wf-text-title" font-size="13">$39<tspan font-size="9" font-weight="normal">/mo</tspan></text>
+    <text x="16" y="68" class="wf-text-regular" font-size="9.5">✓ Full gym floor access • Locker rooms • Mobile App</text>
+    <rect x="16" y="78" width="320" height="24" rx="4" class="wf-btn-secondary" />
+    <text x="176" y="94" class="wf-btn-text-dark" font-size="10">SELECT STANDARD</text>
+
+    <!-- Card 2: Pro Athlete (Featured/Darker Outline) -->
+    <rect x="0" y="120" width="352" height="96" rx="6" fill="#F4F6F8" stroke="#111111" stroke-width="2" />
+    <rect x="16" y="112" width="100" height="16" rx="8" fill="#222222" />
+    <text x="66" y="123" class="wf-btn-text-light" font-size="8">MOST POPULAR</text>
+    <text x="16" y="145" class="wf-text-bold" font-size="12">PRO ATHLETE</text>
+    <text x="290" y="145" class="wf-text-title" font-size="13">$69<tspan font-size="9" font-weight="normal">/mo</tspan></text>
+    <text x="16" y="164" class="wf-text-regular" font-size="9.5">✓ All Group Classes • Sauna &amp; Spa • 2 Guest Passes/mo</text>
+    <rect x="16" y="176" width="320" height="26" rx="4" class="wf-btn-primary" />
+    <text x="176" y="193" class="wf-btn-text-light" font-size="10">SELECT PRO ATHLETE</text>
+  </g>
+
+  <!-- Coaches Preview (Mobile) -->
+  <g transform="translate(24, 1070)">
+    <text x="176" y="14" text-anchor="middle" class="wf-text-title" font-size="13">CERTIFIED COACHES</text>
+
+    <!-- Coach 1 -->
+    <rect x="0" y="26" width="170" height="92" rx="6" class="wf-card" />
+    <rect x="12" y="36" width="38" height="38" rx="4" class="wf-img-box" />
+    <line x1="12" y1="36" x2="50" y2="74" class="wf-img-cross" />
+    <line x1="50" y1="36" x2="12" y2="74" class="wf-img-cross" />
+    <text x="56" y="49" class="wf-text-bold" font-size="9.5">Marcus Vance</text>
+    <text x="56" y="62" class="wf-text-muted" font-size="8">Strength &amp; CSCS</text>
+    <rect x="12" y="80" width="146" height="24" rx="4" class="wf-btn-secondary" />
+    <text x="85" y="95" class="wf-btn-text-dark" font-size="8.5">BOOK SESSION</text>
+
+    <!-- Coach 2 -->
+    <rect x="182" y="26" width="170" height="92" rx="6" class="wf-card" />
+    <rect x="194" y="36" width="38" height="38" rx="4" class="wf-img-box" />
+    <line x1="194" y1="36" x2="232" y2="74" class="wf-img-cross" />
+    <line x1="232" y1="36" x2="194" y2="74" class="wf-img-cross" />
+    <text x="238" y="49" class="wf-text-bold" font-size="9.5">Elena Rostova</text>
+    <text x="238" y="62" class="wf-text-muted" font-size="8">HIIT &amp; Nutrition</text>
+    <rect x="194" y="80" width="146" height="24" rx="4" class="wf-btn-secondary" />
+    <text x="267" y="95" class="wf-btn-text-dark" font-size="8.5">BOOK SESSION</text>
+  </g>
+
+  <!-- Mobile Footer -->
+  <g transform="translate(12, 1200)">
+    <rect x="0" y="0" width="376" height="120" rx="0" fill="#1A1A1A" />
+    <text x="188" y="24" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-weight="700" font-size="11">PEAK PERFORMANCE GYM</text>
+    <text x="188" y="42" text-anchor="middle" fill="#AAAAAA" font-family="sans-serif" font-size="9">123 Fitness Way, Suite 400 • Open 24/7/365</text>
+    <text x="188" y="58" text-anchor="middle" fill="#AAAAAA" font-family="sans-serif" font-size="9">contact@peakperformancegym.org • (555) 732-5496</text>
+
+    <!-- Social Icons Representation -->
+    <circle cx="140" cy="80" r="10" fill="#333333" stroke="#666666" stroke-width="1" />
+    <text x="140" y="84" text-anchor="middle" fill="#FFFFFF" font-size="9">f</text>
+    <circle cx="172" cy="80" r="10" fill="#333333" stroke="#666666" stroke-width="1" />
+    <text x="172" y="84" text-anchor="middle" fill="#FFFFFF" font-size="9">ig</text>
+    <circle cx="204" cy="80" r="10" fill="#333333" stroke="#666666" stroke-width="1" />
+    <text x="204" y="84" text-anchor="middle" fill="#FFFFFF" font-size="9">yt</text>
+    <circle cx="236" cy="80" r="10" fill="#333333" stroke="#666666" stroke-width="1" />
+    <text x="236" y="84" text-anchor="middle" fill="#FFFFFF" font-size="9">in</text>
+
+    <text x="188" y="106" text-anchor="middle" fill="#777777" font-family="sans-serif" font-size="8">© 2026 Peak Performance Gym • WDD 231 Individual Project</text>
+  </g>
+</svg>

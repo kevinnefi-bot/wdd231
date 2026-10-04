@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peak Performance Gym - Individual Project Site Plan | WDD 231</title>
+  <meta name="description" content="Comprehensive individual project site plan for Peak Performance Gym featuring branding identity, site purpose, target scenarios, color palette, typography system, and responsive wireframes for WDD 231.">
+  <meta name="author" content="Kevin Nefi Balcazar Cespedez">
+
+  <!-- Open Graph Meta Tags (Absolute URLs Required) -->
+  <meta property="og:title" content="Peak Performance Gym - Individual Project Site Plan">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Comprehensive website planning blueprint for Peak Performance Gym, including branding justification, user scenarios, color scheme, typography specimens, and mobile and desktop wireframes.">
+  <meta property="og:url" content="https://kevinnefi-bot.github.io/wdd231/project/siteplan.html">
+  <meta property="og:image" content="https://kevinnefi-bot.github.io/wdd231/project/images/site-plan-preview.webp">
+  <meta property="og:image:alt" content="Peak Performance Gym Site Plan Blueprint">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <!-- Google Fonts Preconnect and Stylesheet (Strict Loading Rule: No @import) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles/siteplan.css">
+
+  <!-- Deferred Script -->
+  <script src="scripts/siteplan.js" defer></script>
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="branding-group">
+        <img src="images/favicon.svg" alt="Peak Performance Gym Emblem" width="44" height="44" loading="lazy" class="header-logo">
+        <div class="header-title-block">
+          <h1>Peak <span>Performance</span> Gym</h1>
+          <p class="header-subtitle">Individual Project Site Plan • WDD 231</p>
+        </div>
+      </div>
+
+      <nav class="site-nav" aria-label="Site Plan Quick Navigation">
+        <ul class="nav-list">
+          <li><a href="#site-name" class="nav-link">Site Name</a></li>
+          <li><a href="#site-purpose" class="nav-link">Purpose</a></li>
+          <li><a href="#scenarios" class="nav-link">Scenarios</a></li>
+          <li><a href="#color-scheme" class="nav-link">Colors</a></li>
+          <li><a href="#typography" class="nav-link">Typography</a></li>
+          <li><a href="#wireframes" class="nav-link">Wireframes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Banner / Hero Section -->
+  <section class="plan-banner" aria-labelledby="banner-heading">
+    <div class="banner-content">
+      <span class="plan-badge">WDD 231 • Week 5 Assignment</span>
+      <h2 id="banner-heading" class="banner-title">Individual Website Project Blueprint</h2>
+      <p class="banner-lead">
+        This document serves as the foundational architectural blueprint for designing and developing the 
+        official web presence for <strong>Peak Performance Gym</strong>. It outlines identity, audience motivations, 
+        design tokens, and responsive UI layouts.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main id="main-content" class="main-wrapper">
+
+    <!-- 1. Site Name & Branding Justification -->
+    <section id="site-name" class="plan-section" aria-labelledby="heading-sitename">
+      <div class="section-header">
+        <h2 id="heading-sitename" class="section-title">
+          <span class="section-number">1</span> Site Name &amp; Branding Justification
+        </h2>
+      </div>
+      <div class="section-body">
+        <div class="branding-card-grid">
+          <div class="highlight-box">
+            <h3>Selected Identity: Peak Performance Gym</h3>
+            <p>
+              The name <strong>"Peak Performance Gym"</strong> was deliberately chosen to communicate 
+              uncompromising athletic standards, personal transformation, and achieving one's highest physical 
+              and mental potential. The word <em>"Peak"</em> evokes conquering summit milestones and reaching the 
+              top tier of strength and cardiovascular conditioning, while <em>"Performance"</em> emphasizes 
+              evidence-based, results-driven coaching rather than casual fitness fads.
+            </p>
+            <p class="domain-pill">
+              <span>●</span> Optional domain availability: peakperformancegym.org
+            </p>
+          </div>
+
+          <div class="highlight-box">
+            <h3>Branding Target &amp; Competitive Edge</h3>
+            <p>
+              The branding appeals to self-motivated individuals, competitive athletes, busy professionals, and beginners 
+              seeking structured guidance. Coupled with the motto <em>"Unleash Your Ultimate Strength &amp; Endurance"</em>, 
+              the identity establishes a welcoming yet disciplined environment with modern facilities, certified coaching, 
+              and round-the-clock member access.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Site Purpose -->
+    <section id="site-purpose" class="plan-section" aria-labelledby="heading-purpose">
+      <div class="section-header">
+        <h2 id="heading-purpose" class="section-title">
+          <span class="section-number">2</span> Site Purpose &amp; Value Proposition
+        </h2>
+      </div>
+      <div class="section-body">
+        <p>
+          The purpose of the <strong>Peak Performance Gym</strong> website is to provide a comprehensive, 
+          accessible digital hub that connects current gym members and prospective athletes with essential fitness 
+          services, real-time schedule information, membership registration, and coach booking tools.
+        </p>
+
+        <ul class="purpose-list">
+          <li class="purpose-item">
+            <span class="purpose-icon">✓</span>
+            <div>
+              <strong>Transparent Membership Catalog:</strong> Detail membership tiers (Standard, Pro Athlete, Elite VIP), 
+              perks, monthly pricing, and automated sign-up workflows with zero hidden contract fees.
+            </div>
+          </li>
+          <li class="purpose-item">
+            <span class="purpose-icon">✓</span>
+            <div>
+              <strong>Dynamic Class Scheduling:</strong> Deliver an interactive, filterable weekly schedule of group fitness 
+              classes (HIIT, Power Spin, Vinyasa Yoga, Functional Strength) with real-time slot availability.
+            </div>
+          </li>
+          <li class="purpose-item">
+            <span class="purpose-icon">✓</span>
+            <div>
+              <strong>Certified Coach Directory:</strong> Feature trainer profiles, credentials (CSCS, NASM, Nutrition), 
+              specializations, and direct 1-on-1 personal consultation booking forms.
+            </div>
+          </li>
+          <li class="purpose-item">
+            <span class="purpose-icon">✓</span>
+            <div>
+              <strong>Complimentary Guest Pass Activation:</strong> Offer a simple, friction-free lead conversion form allowing 
+              first-time visitors to claim a 3-day full access free trial pass.
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3. Target Audience Scenarios -->
+    <section id="scenarios" class="plan-section" aria-labelledby="heading-scenarios">
+      <div class="section-header">
+        <h2 id="heading-scenarios" class="section-title">
+          <span class="section-number">3</span> Target Audience Scenarios
+        </h2>
+      </div>
+      <div class="section-body">
+        <p>
+          The site architecture is engineered to answer high-priority questions formulated by our primary personas:
+        </p>
+        <br>
+        <div class="scenarios-grid">
+          <article class="scenario-card">
+            <span class="scenario-persona-tag">Scenario 1 • Group Fitness Enthusiast</span>
+            <h3 class="scenario-question">
+              "What are the weekly schedules and intensity levels for group fitness classes, and how can I reserve a spot before arriving?"
+            </h3>
+            <p class="scenario-solution">
+              <strong>Site Solution:</strong> The website provides an interactive timetable filterable by day (Monday–Sunday) 
+              and class type (HIIT, Cycling, Yoga, Strength). Each class card displays the designated studio, instructor name, 
+              duration, difficulty meter, and a one-click <em>"Reserve Spot"</em> modal.
+            </p>
+          </article>
+
+          <article class="scenario-card">
+            <span class="scenario-persona-tag">Scenario 2 • Prospective New Member</span>
+            <h3 class="scenario-question">
+              "What membership plans and pricing tiers are offered, what specific benefits are included, and can I get a free trial pass before committing?"
+            </h3>
+            <p class="scenario-solution">
+              <strong>Site Solution:</strong> The home and membership pages feature a clear side-by-side comparison matrix 
+              contrasting Standard ($39/mo), Pro Athlete ($69/mo), and Elite VIP ($99/mo) plans. A prominent Call-To-Action (CTA) 
+              banner enables users to submit their email and phone to receive an instant 3-Day Free Guest Pass QR code.
+            </p>
+          </article>
+
+          <article class="scenario-card">
+            <span class="scenario-persona-tag">Scenario 3 • Athletic Goal Achiever</span>
+            <h3 class="scenario-question">
+              "How do I choose the right certified personal trainer for my specific fitness goals (e.g., strength training vs. injury rehab) and schedule an evaluation?"
+            </h3>
+            <p class="scenario-solution">
+              <strong>Site Solution:</strong> A dedicated Trainer Spotlight section showcases high-resolution coach portraits, 
+              accredited certifications, areas of expertise, and an integrated booking form to schedule a free 30-minute fitness evaluation.
+            </p>
+          </article>
+
+          <article class="scenario-card">
+            <span class="scenario-persona-tag">Scenario 4 • Daily Routine Gym-Goer</span>
+            <h3 class="scenario-question">
+              "Where is the facility located, what are the staffed hours versus 24/7 keyless access hours, and what parking options exist?"
+            </h3>
+            <p class="scenario-solution">
+              <strong>Site Solution:</strong> The persistent footer and contact page feature an embedded interactive map, 
+              24/7 facility access policies, staffed service hours, locker room amenities, and on-site parking instructions.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Color Scheme -->
+    <section id="color-scheme" class="plan-section" aria-labelledby="heading-colors">
+      <div class="section-header">
+        <h2 id="heading-colors" class="section-title">
+          <span class="section-number">4</span> Color Scheme &amp; Palette Application
+        </h2>
+      </div>
+      <div class="section-body">
+        <p>
+          The chosen color palette balances athletic energy, discipline, and modern elegance. Four coordinated 
+          colors are systematically utilized throughout the interface, adhering to <strong>WCAG AA</strong> contrast compliance:
+        </p>
+        <br>
+        <div class="color-swatches-grid">
+          <!-- Color 1: Primary Dark -->
+          <div class="color-card">
+            <div class="swatch-box swatch-primary">#0D1B2A</div>
+            <div class="swatch-info">
+              <h4>Rich Navy / Dark Imperial</h4>
+              <span class="swatch-hex">HEX: #0D1B2A</span>
+              <p class="swatch-desc">
+                <strong>Primary Dark:</strong> Used for the main header, page footer, hero container background, primary headings (H1/H2), and strong structural card borders. Conveys power, solidity, and authority.
+              </p>
+            </div>
+          </div>
+
+          <!-- Color 2: Accent Red -->
+          <div class="color-card">
+            <div class="swatch-box swatch-accent">#E63946</div>
+            <div class="swatch-info">
+              <h4>Energetic Crimson Red</h4>
+              <span class="swatch-hex">HEX: #E63946</span>
+              <p class="swatch-desc">
+                <strong>Accent &amp; Call To Action:</strong> Used for primary action buttons, active navigation states, promotional badges, and decorative highlights. Stimulates heart rate, motivation, and athletic drive.
+              </p>
+            </div>
+          </div>
+
+          <!-- Color 3: Secondary Dark -->
+          <div class="color-card">
+            <div class="swatch-box swatch-secondary">#1D2D44</div>
+            <div class="swatch-info">
+              <h4>Deep Slate Blue</h4>
+              <span class="swatch-hex">HEX: #1D2D44</span>
+              <p class="swatch-desc">
+                <strong>Secondary Dark:</strong> Used for navigation bars, section headers, secondary buttons, table headers, and category pills. Creates harmonious visual depth alongside the primary navy.
+              </p>
+            </div>
+          </div>
+
+          <!-- Color 4: Neutral Light -->
+          <div class="color-card">
+            <div class="swatch-box swatch-neutral">#F4F6F8</div>
+            <div class="swatch-info">
+              <h4>Off-White / Light Mist</h4>
+              <span class="swatch-hex">HEX: #F4F6F8</span>
+              <p class="swatch-desc">
+                <strong>Neutral Canvas:</strong> Used for primary page background, card surfaces, and alternating table rows. Provides clean, glare-free readability and maximum contrast against dark typography.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="palette-rules-box">
+          <h4>Palette Application Rule Compliance</h4>
+          <p>
+            <em>Note:</em> Per project guidelines, this site plan document exclusively employs these exact four 
+            colors (<code>#0D1B2A</code>, <code>#E63946</code>, <code>#F4F6F8</code>, and <code>#1D2D44</code>) 
+            for all structural styling, buttons, backgrounds, and headers, ensuring complete visual unity with the planned application.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Typography -->
+    <section id="typography" class="plan-section" aria-labelledby="heading-typography">
+      <div class="section-header">
+        <h2 id="heading-typography" class="section-title">
+          <span class="section-number">5</span> Typography System
+        </h2>
+      </div>
+      <div class="section-body">
+        <p>
+          Two complementary Google Fonts have been chosen to provide punchy athletic headings and clean, 
+          effortlessly readable body copy across all device resolutions:
+        </p>
+        <br>
+        <div class="typography-grid">
+          <!-- Heading Font -->
+          <div class="font-card">
+            <span class="font-badge">Heading Font</span>
+            <h3 class="font-name font-heading-sample">Montserrat</h3>
+            <p class="font-meta">Weights: Semi-Bold (600), Bold (700), Extra-Bold (800) • Geometric Sans-Serif</p>
+            <p class="swatch-desc">
+              <strong>Application:</strong> Used for brand logotypes, primary hero headers (<code>&lt;h1&gt;</code>), 
+              section titles (<code>&lt;h2&gt;</code>), card titles (<code>&lt;h3&gt;</code>), navigation links, and primary CTA buttons.
+            </p>
+            <br>
+            <div class="font-specimen-box">
+              <div class="specimen-h1">H1: UNLEASH PEAK STRENGTH</div>
+              <div class="specimen-h2">H2: Weekly Group Fitness Timetable</div>
+              <div class="specimen-h3">H3: Certified Personal Coaching</div>
+            </div>
+          </div>
+
+          <!-- Body Font -->
+          <div class="font-card">
+            <span class="font-badge">Body Copy Font</span>
+            <h3 class="font-name font-body-sample">Open Sans</h3>
+            <p class="font-meta">Weights: Regular (400), Semi-Bold (600) • Humanist Sans-Serif</p>
+            <p class="swatch-desc">
+              <strong>Application:</strong> Used for general running body text, scenario explanations, lists, table content, 
+              form inputs, and footer captions for optimal optical clarity.
+            </p>
+            <br>
+            <div class="font-specimen-box">
+              <p class="specimen-p">
+                <strong>Body Copy Sample:</strong> Peak Performance Gym combines evidence-based training philosophies 
+                with world-class athletic equipment. Our certified instructors guide you through high-intensity 
+                intervals, strength periodization, and active recovery routines tailored to elevate your personal benchmarks.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Wireframes -->
+    <section id="wireframes" class="plan-section" aria-labelledby="heading-wireframes">
+      <div class="section-header">
+        <h2 id="heading-wireframes" class="section-title">
+          <span class="section-number">6</span> Responsive Homepage Wireframes
+        </h2>
+      </div>
+      <div class="section-body">
+        <p>
+          The wireframes below illustrate the responsive black-and-white structural schematics for the home page, 
+          prioritizing visual hierarchy, user flow, and content placement before applying graphic styling.
+        </p>
+
+        <!-- Interactive View Controls -->
+        <div class="wireframe-controls">
+          <button type="button" class="wireframe-toggle-btn active" data-view="all" aria-pressed="true">Show All Wireframes</button>
+          <button type="button" class="wireframe-toggle-btn" data-view="mobile" aria-pressed="false">Mobile Viewport</button>
+          <button type="button" class="wireframe-toggle-btn" data-view="desktop" aria-pressed="false">Desktop Viewport</button>
+        </div>
+
+        <div class="wireframes-layout">
+          <!-- Mobile Wireframe -->
+          <article id="wireframe-mobile" class="wireframe-card wireframe-view">
+            <div class="wireframe-card-header">
+              <h3 class="wireframe-card-title">Mobile Viewport (Small Screen: &lt; 768px)</h3>
+              <span class="viewport-badge">375px × 1350px</span>
+            </div>
+            <figure class="wireframe-figure wireframe-figure-sm">
+              <img 
+                src="images/wireframe-small.svg" 
+                alt="Black and white wireframe sketch for mobile viewport displaying single-column layout with top hamburger header, stacked hero image placeholder, CTAs, 2x2 feature grid, weekly class schedule list, stacked membership tiers, and mobile footer" 
+                width="400" 
+                height="1350" 
+                loading="lazy" 
+                class="wireframe-img">
+              <figcaption class="wireframe-caption">
+                <strong>Mobile Architectural Structure:</strong> Vertical single-column stack. Includes compact hamburger navigation, 
+                full-width hero section with prominent 3-Day Free Trial CTA, 2×2 quick feature tiles, horizontally scrollable class category pills, 
+                stacked membership tier cards, and single-column coach cards.
+              </figcaption>
+            </figure>
+          </article>
+
+          <!-- Desktop Wireframe -->
+          <article id="wireframe-desktop" class="wireframe-card wireframe-view">
+            <div class="wireframe-card-header">
+              <h3 class="wireframe-card-title">Desktop Viewport (Large Screen: ≥ 1024px)</h3>
+              <span class="viewport-badge">1040px × 850px</span>
+            </div>
+            <figure class="wireframe-figure wireframe-figure-lg">
+              <img 
+                src="images/wireframe-large.svg" 
+                alt="Black and white wireframe sketch for desktop viewport displaying multi-column layout with horizontal top navigation, two-column split hero section, 4-column value highlights bar, 3-column membership comparison table, interactive weekly timetable grid, and four-column footer" 
+                width="1040" 
+                height="850" 
+                loading="lazy" 
+                class="wireframe-img">
+              <figcaption class="wireframe-caption">
+                <strong>Desktop Architectural Structure:</strong> Multi-column fluid grid. Features horizontal navigation with quick contact 
+                and primary CTA, two-column hero with split value proposition and high-impact athlete photo placeholder, 4-column feature highlights, 
+                3-column membership comparison cards with highlighted Pro tier, interactive tabbed schedule, and comprehensive 4-column footer.
+              </figcaption>
+            </figure>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p class="footer-brand">Peak <span>Performance</span> Gym</p>
+      <p class="footer-text">
+        &copy; <span id="current-year">2026</span> • WDD 231 Individual Project Site Plan • 
+        <span class="footer-student">Kevin Nefi Balcazar Cespedez</span> • Bolivia
+      </p>
+      <p class="footer-modified">
+        Last Modified: <span id="last-modified"></span>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
