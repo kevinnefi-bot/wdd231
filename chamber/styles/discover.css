@@ -1,0 +1,214 @@
+/* =======================================================================
+   Chamber Discover Page — discover.css
+   Course: WDD 231 | Kevin Balcazar
+   Grid: named areas at 3 breakpoints (small / medium / large)
+   Colors match existing chamber palette: #003366, #f4f7fb, #1f2937
+   ======================================================================= */
+
+/* ── Visit Message Banner ─────────────────────────────────────────────── */
+#visit-banner {
+    background: #e8f0fe;
+    border-left: 4px solid #003366;
+    color: #1f2937;
+    font-size: 0.95rem;
+    font-style: italic;
+    padding: 0.75rem 1rem;
+    margin: 1rem;
+    border-radius: 0 6px 6px 0;
+}
+
+#visit-message {
+    font-weight: 600;
+}
+
+/* ── Page Heading ─────────────────────────────────────────────────────── */
+.discover-heading {
+    text-align: center;
+    color: #003366;
+    font-size: 1.6rem;
+    margin: 1rem 0 0.25rem;
+    padding: 0 1rem;
+}
+
+.discover-subheading {
+    text-align: center;
+    color: #4a5568;
+    font-size: 0.95rem;
+    margin: 0 0 1.25rem;
+    padding: 0 1rem;
+}
+
+/* ── Places Grid Container ────────────────────────────────────────────── */
+
+/*
+  SMALL VIEWPORT (< 641px)
+  Single column. Named areas stacked top-to-bottom:
+  place-1 → place-2 → ... → place-8
+*/
+#places-grid {
+    display: grid;
+    gap: 1.25rem;
+    padding: 0 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    /* Named grid areas – single column (default / small) */
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "place-1"
+        "place-2"
+        "place-3"
+        "place-4"
+        "place-5"
+        "place-6"
+        "place-7"
+        "place-8";
+}
+
+/* Assign each card to its named area */
+#place-1 { grid-area: place-1; }
+#place-2 { grid-area: place-2; }
+#place-3 { grid-area: place-3; }
+#place-4 { grid-area: place-4; }
+#place-5 { grid-area: place-5; }
+#place-6 { grid-area: place-6; }
+#place-7 { grid-area: place-7; }
+#place-8 { grid-area: place-8; }
+
+/* ── Place Card ───────────────────────────────────────────────────────── */
+.place-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 51, 102, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.place-card h2 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #ffffff;
+    background: #003366;
+    margin: 0;
+    padding: 0.75rem 1rem;
+}
+
+.place-card figure {
+    margin: 0;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.place-card figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+}
+
+.place-card address {
+    font-style: italic;
+    font-size: 0.82rem;
+    color: #4a5568;
+    padding: 0.5rem 1rem 0;
+    border-left: 3px solid #003366;
+    margin: 0.6rem 1rem 0;
+}
+
+.place-card .place-desc {
+    font-size: 0.9rem;
+    color: #1f2937;
+    padding: 0.5rem 1rem 0;
+    margin: 0;
+    line-height: 1.55;
+    flex: 1;
+}
+
+.place-card .place-details {
+    font-size: 0.85rem;
+    color: #4a5568;
+    background: #f4f7fb;
+    border-top: 1px dashed #c6d4e8;
+    padding: 0.65rem 1rem;
+    margin: 0;
+    line-height: 1.5;
+    display: none; /* hidden until Learn More clicked */
+}
+
+/* ── Learn More Button ────────────────────────────────────────────────── */
+.learn-more-btn {
+    display: block;
+    width: calc(100% - 2rem);
+    margin: 0.75rem 1rem 1rem;
+    padding: 0.6rem 1rem;
+    background: #003366;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.learn-more-btn:hover,
+.learn-more-btn:focus {
+    background: #004a99;
+    outline: 2px solid #004a99;
+    outline-offset: 2px;
+}
+
+/* ── MEDIUM VIEWPORT (641px – 1024px): 2-column grid ─────────────────── */
+@media (min-width: 641px) {
+    #places-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "place-1 place-2"
+            "place-3 place-4"
+            "place-5 place-6"
+            "place-7 place-8";
+    }
+}
+
+/* ── LARGE VIEWPORT (≥ 1025px): 3-column grid with feature card ──────── */
+@media (min-width: 1025px) {
+    #places-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "place-1 place-1 place-2"
+            "place-3 place-4 place-5"
+            "place-6 place-7 place-8";
+    }
+
+    /* First card spans 2 columns as featured highlight */
+    #place-1 {
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    #place-1 figure {
+        width: 340px;
+        min-width: 340px;
+        flex-shrink: 0;
+    }
+
+    #place-1 figure img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Image hover effect — desktop only */
+    .place-card figure img:hover {
+        transform: scale(1.06);
+    }
+
+    .place-card:hover {
+        box-shadow: 0 6px 20px rgba(0, 51, 102, 0.18);
+        transform: translateY(-3px);
+    }
+}
