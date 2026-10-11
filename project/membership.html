@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Membership and Guest Pass | Peak Performance Gym</title>
+  <meta name="description" content="Compare Peak Performance Gym membership plans or request a complimentary three-day guest pass. Choose the training support that works for you.">
+  <meta name="author" content="Kevin Nefi Balcazar Cespedez">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Membership and Guest Pass | Peak Performance Gym">
+  <meta property="og:description" content="Choose a membership or try Peak Performance Gym with a complimentary three-day guest pass.">
+  <meta property="og:url" content="https://kevinnefi-bot.github.io/wdd231/project/membership.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=75">
+  <meta property="og:image:alt" content="Modern strength training gym">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/site.css">
+  <script type="module" src="scripts/site.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header"><a class="brand" href="index.html" aria-label="Peak Performance Gym home"><img src="images/gym-logo.svg" width="200" height="50" alt="Peak Performance Gym"></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open navigation"><span></span><span></span><span></span></button><nav id="site-menu" class="site-menu" aria-label="Main navigation"><a href="index.html">Home</a><a href="classes.html">Classes</a><a href="membership.html" aria-current="page">Membership</a></nav></header>
+  <main id="main-content" class="page-main">
+    <section class="page-heading"><p class="eyebrow">Start where you are</p><h1>Find the right<br>fit for your life.</h1><p>Every plan starts with a welcoming space, helpful staff, and room to make it your own.</p></section>
+    <section class="section membership-page-plans" aria-labelledby="membership-title">
+      <div class="section-heading"><p class="eyebrow">No hidden fees</p><h2 id="membership-title">Membership options</h2></div>
+      <div class="plan-grid">
+        <article class="plan-card"><p class="plan-name">Standard</p><p class="plan-price"><span>$39</span> / month</p><p>Independent training, on your schedule.</p><ul><li>24/7 gym access</li><li>Strength and cardio floor</li><li>Locker room access</li></ul><a class="button button-outline" href="#guest-pass" data-plan="standard">Select Standard</a></article>
+        <article class="plan-card plan-card-featured"><p class="plan-tag">Most flexible</p><p class="plan-name">Pro Athlete</p><p class="plan-price"><span>$69</span> / month</p><p>Regular classes and coaching support.</p><ul><li>Everything in Standard</li><li>Unlimited group classes</li><li>Monthly coach check-in</li></ul><a class="button button-primary" href="#guest-pass" data-plan="pro">Select Pro Athlete</a></article>
+        <article class="plan-card"><p class="plan-name">Elite VIP</p><p class="plan-price"><span>$99</span> / month</p><p>Personal attention for your next milestone.</p><ul><li>Everything in Pro Athlete</li><li>Two personal sessions monthly</li><li>Priority class reservations</li></ul><a class="button button-outline" href="#guest-pass" data-plan="elite">Select Elite VIP</a></article>
+      </div>
+    </section>
+    <section id="guest-pass" class="form-section" aria-labelledby="guest-pass-title">
+      <div class="form-intro"><p class="eyebrow">No commitment</p><h2 id="guest-pass-title">Claim a three-day guest pass.</h2><p>Tell us a little about yourself. Our front desk team will help you get started when you visit.</p><p class="form-note">Fields marked <span aria-hidden="true">*</span> are required.</p></div>
+      <form class="guest-form" action="thankyou.html" method="get">
+        <label for="full-name">Full name <span aria-hidden="true">*</span><input id="full-name" name="name" autocomplete="name" required minlength="2"></label>
+        <label for="email">Email address <span aria-hidden="true">*</span><input id="email" name="email" type="email" autocomplete="email" required></label>
+        <label for="phone">Phone number <span aria-hidden="true">*</span><input id="phone" name="phone" type="tel" autocomplete="tel" required minlength="7"></label>
+        <label for="plan">Membership interest<select id="plan" name="plan"><option value="guest pass">Just the guest pass</option><option value="standard">Standard - $39/month</option><option value="pro">Pro Athlete - $69/month</option><option value="elite">Elite VIP - $99/month</option></select></label>
+        <label for="visit-date">Preferred first visit<input id="visit-date" name="visitDate" type="date"></label>
+        <label for="goals">What would you like to work on?<select id="goals" name="goal"><option value="general fitness">General fitness</option><option value="strength">Strength</option><option value="conditioning">Conditioning</option><option value="mobility">Mobility and recovery</option><option value="not sure yet">Not sure yet</option></select></label>
+        <input id="class-interest" name="class" type="hidden">
+        <button class="button button-primary form-submit" type="submit">Request my guest pass</button>
+        <p class="privacy-note">This demo form displays your submission on the next page and does not send or store it.</p>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="footer-main"><a class="brand footer-brand" href="index.html"><img src="images/gym-logo.svg" width="200" height="50" alt="Peak Performance Gym" loading="lazy"></a><p>123 Fitness Way, Suite 400<br>Open 24 hours for members</p><nav aria-label="Footer navigation"><a href="classes.html">Class schedule</a><a href="membership.html">Memberships</a><a href="attributions.html">Attributions</a></nav></div><div class="footer-bottom"><span>&copy; <span data-current-year>2026</span> Peak Performance Gym</span><span>Train with purpose.</span></div></footer>
+</body>
+</html>

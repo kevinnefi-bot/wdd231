@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Peak Performance Gym | Train With Purpose</title>
+  <meta name="description" content="Train with purpose at Peak Performance Gym. Explore coached classes, flexible memberships, and a welcoming 24/7 training space.">
+  <meta name="author" content="Kevin Nefi Balcazar Cespedez">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Peak Performance Gym | Train With Purpose">
+  <meta property="og:description" content="Find your next class and build a training routine that fits your life at Peak Performance Gym.">
+  <meta property="og:url" content="https://kevinnefi-bot.github.io/wdd231/project/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=75">
+  <meta property="og:image:alt" content="Modern strength training gym with rows of equipment">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/site.css">
+  <script type="module" src="scripts/site.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Peak Performance Gym home">
+      <img src="images/gym-logo.svg" width="200" height="50" alt="Peak Performance Gym">
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="site-menu" class="site-menu" aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="classes.html">Classes</a>
+      <a href="membership.html">Membership</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-image" src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1400&q=75" alt="Bright, fully equipped gym floor ready for training" width="1400" height="900" fetchpriority="high">
+      <div class="hero-copy">
+        <p class="eyebrow">Your work. Your pace. Your peak.</p>
+        <h1 id="hero-title">Make strength<br>part of your life.</h1>
+        <p>Room to start, coaching to grow, and a training community that meets you where you are.</p>
+        <div class="button-row">
+          <a class="button button-primary" href="membership.html">Claim a 3-day guest pass</a>
+          <a class="button button-light" href="classes.html">Explore the classes</a>
+        </div>
+      </div>
+      <p class="hero-note"><span>01</span> Built around real life</p>
+    </section>
+
+    <section class="quick-facts" aria-label="Gym highlights">
+      <p><strong>24/7</strong><span>Member access</span></p>
+      <p><strong>15+</strong><span>Weekly class options</span></p>
+      <p><strong>All levels</strong><span>Coaching that adapts</span></p>
+      <p><strong>3 days</strong><span>Try us on the house</span></p>
+    </section>
+
+    <section class="section home-intro" aria-labelledby="intro-title">
+      <div class="section-heading">
+        <p class="eyebrow">Training, without the guesswork</p>
+        <h2 id="intro-title">A gym that meets you at your starting line.</h2>
+      </div>
+      <p class="intro-copy">Build a routine around what matters to you. Move from strength training to mobility, book a coach when you need direction, and make progress one good session at a time.</p>
+    </section>
+
+    <section class="class-feature" aria-labelledby="class-feature-title">
+      <div class="class-feature-copy">
+        <p class="eyebrow">Find your next session</p>
+        <h2 id="class-feature-title">Good energy.<br>Great coaching.</h2>
+        <p>From your first fundamentals class to a tough conditioning block, our weekly lineup makes it easy to find a session that fits your day.</p>
+        <a class="text-link" href="classes.html">See the full class schedule <span aria-hidden="true">&#8594;</span></a>
+      </div>
+      <div class="class-feature-list">
+        <p><span>01</span><strong>Strength Lab</strong><small>Build confidence under the bar</small></p>
+        <p><span>02</span><strong>Cycle + Climb</strong><small>Intervals with a finish line</small></p>
+        <p><span>03</span><strong>Reset Flow</strong><small>Mobility for your next session</small></p>
+      </div>
+    </section>
+
+    <section class="section membership-preview" aria-labelledby="plans-title">
+      <div class="section-heading section-heading-row">
+        <div><p class="eyebrow">Straightforward options</p><h2 id="plans-title">Choose your way in.</h2></div>
+        <a class="text-link" href="membership.html">Compare all benefits <span aria-hidden="true">&#8594;</span></a>
+      </div>
+      <div class="plan-grid">
+        <article class="plan-card"><p class="plan-name">Standard</p><p class="plan-price"><span>$39</span> / month</p><p>For independent training and open-gym access.</p><ul><li>24/7 gym access</li><li>Strength and cardio floor</li><li>Locker room access</li></ul><a href="membership.html?plan=standard" class="text-link">Choose Standard <span aria-hidden="true">&#8594;</span></a></article>
+        <article class="plan-card plan-card-featured"><p class="plan-tag">Most flexible</p><p class="plan-name">Pro Athlete</p><p class="plan-price"><span>$69</span> / month</p><p>For members who want coaching built into the week.</p><ul><li>Everything in Standard</li><li>Unlimited group classes</li><li>Monthly coach check-in</li></ul><a href="membership.html?plan=pro" class="text-link">Choose Pro Athlete <span aria-hidden="true">&#8594;</span></a></article>
+        <article class="plan-card"><p class="plan-name">Elite VIP</p><p class="plan-price"><span>$99</span> / month</p><p>For a more personal and supported training plan.</p><ul><li>Everything in Pro Athlete</li><li>Two personal sessions monthly</li><li>Priority class reservations</li></ul><a href="membership.html?plan=elite" class="text-link">Choose Elite VIP <span aria-hidden="true">&#8594;</span></a></article>
+      </div>
+    </section>
+
+    <section class="guest-pass" aria-labelledby="guest-title">
+      <div><p class="eyebrow">New around here?</p><h2 id="guest-title">Your first three days are on us.</h2></div>
+      <a class="button button-primary" href="membership.html">Get your guest pass</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main"><a class="brand footer-brand" href="index.html"><img src="images/gym-logo.svg" width="200" height="50" alt="Peak Performance Gym" loading="lazy"></a><p>123 Fitness Way, Suite 400<br>Open 24 hours for members</p><nav aria-label="Footer navigation"><a href="classes.html">Class schedule</a><a href="membership.html">Memberships</a><a href="attributions.html">Attributions</a></nav></div>
+    <div class="footer-bottom"><span>&copy; <span data-current-year>2026</span> Peak Performance Gym</span><span>Train with purpose.</span></div>
+  </footer>
+</body>
+</html>

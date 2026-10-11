@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Group Fitness Classes | Peak Performance Gym</title>
+  <meta name="description" content="Browse the Peak Performance Gym weekly group fitness schedule. Filter by day or class style, save favorites, and reserve a spot.">
+  <meta name="author" content="Kevin Nefi Balcazar Cespedez">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Group Fitness Classes | Peak Performance Gym">
+  <meta property="og:description" content="Find a coached group fitness session that fits your schedule and training goals.">
+  <meta property="og:url" content="https://kevinnefi-bot.github.io/wdd231/project/classes.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=75">
+  <meta property="og:image:alt" content="Modern strength training gym">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/site.css">
+  <script type="module" src="scripts/site.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Peak Performance Gym home"><img src="images/gym-logo.svg" width="200" height="50" alt="Peak Performance Gym"></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open navigation"><span></span><span></span><span></span></button>
+    <nav id="site-menu" class="site-menu" aria-label="Main navigation"><a href="index.html">Home</a><a href="classes.html" aria-current="page">Classes</a><a href="membership.html">Membership</a></nav>
+  </header>
+  <main id="main-content" class="page-main">
+    <section class="page-heading"><p class="eyebrow">Move with a crew</p><h1>Find your next<br>good session.</h1><p>Small-group coaching, smart progressions, and a spot for every level.</p></section>
+    <section class="schedule" aria-labelledby="schedule-title">
+      <div class="schedule-top"><div><p class="eyebrow">Weekly schedule</p><h2 id="schedule-title">Classes built for real people.</h2></div><p id="class-count" class="result-count" aria-live="polite">Loading classes...</p></div>
+      <div class="class-filters">
+        <label>Search classes<input id="class-search" type="search" placeholder="Try strength or yoga" autocomplete="off"></label>
+        <label>Day<select id="day-filter"><option value="all">All days</option><option>Monday</option><option>Tuesday</option><option>Wednesday</option><option>Thursday</option><option>Friday</option><option>Saturday</option><option>Sunday</option></select></label>
+        <label>Style<select id="category-filter"><option value="all">All styles</option><option>Strength</option><option>Conditioning</option><option>Cycle</option><option>Mobility</option><option>Yoga</option></select></label>
+        <label class="saved-filter"><input id="saved-only" type="checkbox"> Show saved</label>
+      </div>
+      <p id="class-error" class="status-message" role="alert" hidden></p>
+      <div id="class-list" class="class-grid" aria-live="polite"></div>
+    </section>
+  </main>
+  <dialog id="class-dialog" class="class-dialog" aria-labelledby="dialog-title">
+    <form method="dialog"><button class="dialog-close" aria-label="Close class details">&times;</button></form>
+    <p class="eyebrow" id="dialog-category"></p><h2 id="dialog-title"></h2><p id="dialog-description"></p>
+    <dl id="dialog-facts" class="dialog-facts"></dl>
+    <a id="reserve-link" class="button button-primary" href="membership.html">Reserve a spot</a>
+  </dialog>
+  <footer class="site-footer"><div class="footer-main"><a class="brand footer-brand" href="index.html"><img src="images/gym-logo.svg" width="200" height="50" alt="Peak Performance Gym" loading="lazy"></a><p>123 Fitness Way, Suite 400<br>Open 24 hours for members</p><nav aria-label="Footer navigation"><a href="classes.html">Class schedule</a><a href="membership.html">Memberships</a><a href="attributions.html">Attributions</a></nav></div><div class="footer-bottom"><span>&copy; <span data-current-year>2026</span> Peak Performance Gym</span><span>Train with purpose.</span></div></footer>
+</body>
+</html>
